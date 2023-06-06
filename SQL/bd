@@ -1,0 +1,13 @@
+CREATE TABLE palavras (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    palavra VARCHAR(255) NOT NULL,
+    nivel ENUM('fácil', 'médio', 'difícil') NOT NULL
+);
+
+INSERT INTO palavras (palavra, nivel) VALUES
+    ('sol', 'fácil'),
+    ('lua', 'fácil'),
+    ('casa', 'médio'),
+    ('gato', 'médio'),
+    ('banana', 'difícil'),
+    ('morango', 'difícil');
